@@ -5,13 +5,13 @@ public class Main {
         ThreadGroup mainGroup = new ThreadGroup("main group");
 
         MyThread myThread1 = new MyThread();
-        myThread1.setName("поток 1");
+        myThread1.setName("РїРѕС‚РѕРє 1");
         MyThread myThread2 = new MyThread();
-        myThread1.setName("поток 2");
+        myThread1.setName("РїРѕС‚РѕРє 2");
         MyThread myThread3 = new MyThread();
-        myThread1.setName("поток 3");
+        myThread1.setName("РїРѕС‚РѕРє 3");
         MyThread myThread4 = new MyThread();
-        myThread1.setName("поток 3");
+        myThread1.setName("РїРѕС‚РѕРє 3");
 
         Thread thread1 = new Thread(mainGroup, myThread1);
         Thread thread2 = new Thread(mainGroup, myThread2);
@@ -30,6 +30,6 @@ public class Main {
         }
         mainGroup.interrupt();
 
-        System.out.println("Останавливаю поток");
+        System.out.println("РћСЃС‚Р°РЅР°РІР»РёРІР°СЋ РїРѕС‚РѕРє");
     }
 }
