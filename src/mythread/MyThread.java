@@ -1,4 +1,4 @@
-package myThread;
+package mythread;
 
 public class MyThread extends Thread{
     @Override
@@ -6,12 +6,12 @@ public class MyThread extends Thread{
         try {
             while(!isInterrupted()) {
                 Thread.sleep(2500);
-                System.out.printf("Я %s .Всем привет!\n", getName());
+                System.out.printf("РЇ %s .Р’СЃРµРј РїСЂРёРІРµС‚!\n", getName());
             }
         } catch (InterruptedException err) {
 
         } finally{
-            System.out.printf("%s завершен\n", getName());
+            System.out.printf("%s Р·Р°РІРµСЂС€РµРЅ\n", getName());
         }
     }
 }
